@@ -1,0 +1,37 @@
+<!DocType html>
+<head>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body style=" background-Color: rgb(107, 101, 101); margin:0; 
+padding:0; overflow-x: hidden; ">
+    <div style="width:100%; display:inline-block; margin: 0 auto; 
+        padding:20px; background-color: rgb(42, 42, 40); color:azure">
+        <label>TileSize</label>
+        <input value="32" id="tileSize" style="width: 20px; height: 20px; margin-right:10px"></input>
+        <label>WorldSize (X)</label>
+        <input value="32" id="worldSizeX" style="width: 20px; height: 20px; margin-right:10px"></input>
+        <label>WorldSize (Y)</label>
+        <input value="32" id="worldSizeY" style="width: 20px; height: 20px; margin-right:10px"></input>
+        <br><br><label>Tile Map:</label>
+        
+       <input type="file" id="imageLoader0" name="imageLoader"/>
+        <label>Look Up:</label>
+        <input type="file" id="imageLoader1" name="imageLoader"/>
+        <button id="btn">Download</button>
+        
+    </div>
+    <div id="uploadedFiles" style="display: inline-block;">
+        <canvas id="tileCanvas" style="margin:20px"></canvas>
+        <canvas id="lookupCanvas" style="margin:20px"></canvas>
+    </div>
+    <div id="tileSelector">Tile selector</div>
+    <div id="worldHandler">
+        world Handler
+        <canvas id="worldCanvas"></canvas>
+    </div>
+
+
+    
+    <script src="main.js" type="module"></script>
+</body>
