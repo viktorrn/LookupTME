@@ -1,4 +1,43 @@
+
 <!DocType html>
+<head>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body style=" background-Color: rgb(107, 101, 115); margin:0; 
+padding:0; overflow-x: hidden; ">
+    <div style="width:100%; display:inline-block; margin: 0 auto; 
+        padding:20px; background-color: rgb(42, 42, 40); color:rgb(231, 241, 241)">
+        <label>TileSize</label>
+        <input value="16" id="tileSize" type="number" style="width: 40px; height: 20px; margin-right:10px"></input>
+        <label>WorldSize (X)</label>
+        <input value="16" id="roomWidth" type="number" style="width: 40px; height: 20px; margin-right:10px"></input>
+        <label>WorldSize (Y)</label>
+        <input value="16" id="roomHeight" type="number" style="width: 40px; height: 20px; margin-right:10px"></input>
+        <label>Draw Scale</label>
+        <input value="1" id="drawScale" type="number" style="width: 40px; height: 20px; margin-right:10px"></input>
+        <br><br><label>Tile Map:</label>
+        
+       <input type="file" id="imageLoader0" name="imageLoader"/>
+        <label>Look Up:</label>
+        <input type="file" id="imageLoader1" name="imageLoader"/>
+        <button id="btn">Download</button>
+        
+    </div>
+    <div id="uploadedFiles" style="display: inline-block;">
+        <canvas id="tileCanvas" style="margin:20px"></canvas>
+        <canvas id="lookupCanvas" style="margin:20px"></canvas>
+    </div>
+    <div id="tileSelector">Tile selector</div>
+    <div id="worldHandler" style="margin:auto; text-align:center">
+        <canvas id="roomDisplayCanvas"></canvas>
+    </div>
+
+
+    
+    <script src="main.js" type="module"></script>
+</body>
+<!--<!DocType html>
 <head></head>
 <body>
     <script text="text/javascript">
@@ -11,4 +50,4 @@
             window.open("game.html","mywindow",`menubar=0,resizable=0,width=${width},height=${height}`);
         }
     </script>
-</body>
+</body>!-->
